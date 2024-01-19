@@ -1,9 +1,9 @@
--- 9.Вивести прізвища, посади, ставки та надбавки асистентів,
--- надбавка яких у діапазоні від 160 до 550. 
+-- 10. Вивести прізвища та ставки асистентів.
 
-SELECT Surname, Position, Salary, Premium
+SELECT Surname, Salary
 FROM Teachers
-WHERE IsAssistant = TRUE AND Premium::numeric BETWEEN 160 AND 550;
+WHERE IsAssistant = TRUE;
+
 
 
 
