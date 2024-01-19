@@ -1,10 +1,13 @@
--- 12. Вивести назви кафедр, які в алфавітному порядку розміщені до кафедри «Software Development». Виведене поле
--- назвіть «Name of Department».
+-- 13. Вивести прізвища асистентів із зарплатою (сума ставки
+-- та надбавки) не більше 1200.
 
-SELECT Name AS "Name of Department"
-FROM Departments
-WHERE Name < 'Software Development'
-ORDER BY Name;
+SELECT Surname, Salary 
+FROM IsAssistant
+WHERE (Salary + Premium) < 1200;
+
+
+
+
 
 
 
