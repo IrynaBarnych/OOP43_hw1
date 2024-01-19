@@ -1,9 +1,8 @@
--- 4.Вивести таблицю факультетів одним полем у такому форматі: 
--- «The dean of faculty [faculty] is [dean].».
+-- 5.Вивести прізвища професорів, ставка яких перевищує 1050.
 
-SELECT
-    'The dean of faculty ' || Name || ' is ' || Dean AS "Faculty Information"
-FROM Faculties;
+SELECT Surname
+FROM Teachers
+WHERE IsProfessor = TRUE AND Salary::numeric > 1050;
 
 
 
