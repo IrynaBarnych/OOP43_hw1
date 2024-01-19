@@ -1,8 +1,11 @@
--- 10. Вивести прізвища та ставки асистентів.
+-- 11. Вивести прізвища та посади викладачів, які були прийняті
+-- на роботу до 01.01.2000.
 
-SELECT Surname, Salary
+SELECT Surname, Position
 FROM Teachers
-WHERE IsAssistant = TRUE;
+WHERE EmploymentDate < '2000-01-01';
+
+
 
 
 
