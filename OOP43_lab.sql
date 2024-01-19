@@ -1,8 +1,11 @@
--- 5.Вивести прізвища професорів, ставка яких перевищує 1050.
+-- 6. Вивести назви кафедр, фонд фінансування яких менший,
+-- ніж 11000 або більший за 25000.
 
-SELECT Surname
-FROM Teachers
-WHERE IsProfessor = TRUE AND Salary::numeric > 1050;
+SELECT Name
+FROM Departments
+WHERE Financing::numeric < 11000 OR Financing::numeric > 25000;
+
+
 
 
 
