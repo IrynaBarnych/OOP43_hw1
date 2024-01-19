@@ -1,8 +1,10 @@
--- 14. Вивести назви груп 5-го курсу з рейтингом у діапазоні від 2 до 4.
+-- 15. Вивести прізвища асистентів зі ставкою менше, ніж 550
+-- або надбавкою менше, ніж 200.
 
-SELECT Name, Rating
-FROM Groups
-WHERE Year = 5 AND Rating BETWEEN 2 AND 4;
+SELECT Surname
+FROM Teachers
+WHERE IsAssistant AND (Salary < 550 OR Premium < 200);
+
 
 
 
