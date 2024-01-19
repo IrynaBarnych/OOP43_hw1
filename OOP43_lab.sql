@@ -1,9 +1,11 @@
--- 11. Вивести прізвища та посади викладачів, які були прийняті
--- на роботу до 01.01.2000.
+-- 12. Вивести назви кафедр, які в алфавітному порядку розміщені до кафедри «Software Development». Виведене поле
+-- назвіть «Name of Department».
 
-SELECT Surname, Position
-FROM Teachers
-WHERE EmploymentDate < '2000-01-01';
+SELECT Name AS "Name of Department"
+FROM Departments
+WHERE Name < 'Software Development'
+ORDER BY Name;
+
 
 
 
