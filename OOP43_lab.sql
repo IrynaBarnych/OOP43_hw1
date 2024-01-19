@@ -1,8 +1,8 @@
--- 7.Вивести назви факультетів, окрім факультету «Computer Science».
+-- 8. Вивести прізвища та посади викладачів, які не є професорами.
 
-SELECT Name
-FROM Faculties
-WHERE Name <> 'Computer Science';
+SELECT Surname, Position
+FROM Teachers
+WHERE IsProfessor = FALSE;
 
 
 
