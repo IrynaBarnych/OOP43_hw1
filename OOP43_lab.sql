@@ -1,6 +1,11 @@
--- 1.Вивести назви груп та їх рейтинги з уточненнями до назв
---полів відповідно до назви таблиці.
+-- 3. Вивести для викладачів їх прізвища, відсоток ставки по
+--відношенню до надбавки та відсоток ставки 
+--по відношенню до зарплати (сума ставки та надбавки).
 
-SELECT Id AS "Groups Id", Name AS "Group Name", Rating AS "Group Rating"
-FROM Groups;
+SELECT
+    Surname AS "Last Name",
+    Premium / (Salary + Premium) * 100 AS "Percentage of Salary for Premium",
+    Salary / (Salary + Premium) * 100 AS "Percentage of Salary for Total"
+FROM Teachers;
+
 
