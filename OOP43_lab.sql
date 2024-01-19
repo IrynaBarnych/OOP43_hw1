@@ -1,11 +1,9 @@
--- 3. Вивести для викладачів їх прізвища, відсоток ставки по
---відношенню до надбавки та відсоток ставки 
---по відношенню до зарплати (сума ставки та надбавки).
+-- 4.Вивести таблицю факультетів одним полем у такому форматі: 
+-- «The dean of faculty [faculty] is [dean].».
 
 SELECT
-    Surname AS "Last Name",
-    Premium / (Salary + Premium) * 100 AS "Percentage of Salary for Premium",
-    Salary / (Salary + Premium) * 100 AS "Percentage of Salary for Total"
-FROM Teachers;
+    'The dean of faculty ' || Name || ' is ' || Dean AS "Faculty Information"
+FROM Faculties;
+
 
 
